@@ -56,12 +56,39 @@ div .first_column p{
 
 }
 
-div .first_column input {
-    margin-top: 30px;
+.search-container {
+    position: relative;
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+  }
+  
+.search-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     box-sizing: border-box;
-    background-color: white;
-    
 }
+  
+.dropdown {
+    list-style-type: none;
+    margin-top: 30px;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    display: block;
+}
+  
+.dropdown li {
+    padding: 8px;
+    cursor: pointer;
+}
+  
+  .dropdown li:hover {
+    background-color: #f0f0f0;
+}
+  
+
