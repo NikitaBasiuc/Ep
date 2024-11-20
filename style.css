@@ -3,7 +3,18 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    font-family: Arial, sans-serif;
 }
+
+.body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.first_column, .second_column {
+    width: 48%; 
+}
+
 
 div .first_column{
     width: 40%;
@@ -130,3 +141,18 @@ div .week .dropdown {
     background-color: #fff;
     cursor: pointer;
 }
+
+.second_column .container .header {
+    text-align: center;
+}
+
+.second_column .container .header h3 {
+    color: white;
+}
+
+.second_column .container img {
+    width: 130px;
+    margin-top: 20px;
+
+}
+
