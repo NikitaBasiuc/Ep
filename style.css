@@ -252,6 +252,59 @@ div .week .dropdown {
     background: rgb(189, 190, 255);
 }
 
+div .first_column .deffinition{
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+div .first_column .deffinition div{
+    color: white;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+div .first_column .navigation_buttons{
+    display: flex;
+}
+
+div .first_column .navigation_buttons .button2, .button3 {
+    margin-left: 10px;
+}
+
+div .first_column .navigation_buttons .button1{
+    padding: 5px;
+    background-color: #25975A;
+    color: white;
+    border: none;
+}
+
+div .first_column .navigation_buttons .button2{
+    padding: 5px;
+    background-color: rgb(233, 125, 125);
+    color: white;
+    border: none;
+}
+
+div .first_column .navigation_buttons .button3{
+    padding: 5px;
+    background-color: #5b3666;
+    color: white;
+    border: none;
+}
+
+div .first_column .service{
+    margin-top: 15px;
+}
+
+div .first_column .service p{
+    padding: 20px;
+    background-color: white;
+    color: #32d296;
+    font-weight: 100;
+}
+
 .second_column .container .header {
     text-align: center;
 }
@@ -274,15 +327,5 @@ div .week .dropdown {
     gap: 0; 
 }
 
-div .first_column .deffinition{
-    margin-top: 30px;
-    font-size: 12px;
-    font-weight: 300;
-}
 
-div .first_column .deffinition div{
-    color: white;
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-}
+
