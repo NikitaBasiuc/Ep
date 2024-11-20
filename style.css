@@ -73,10 +73,8 @@ div .first_column p{
     list-style-type: none;
     margin-top: 30px;
     padding: 0;
-    border: 1px solid #ccc;
-    border-top: none;
     border-radius: 0 0 4px 4px;
-    max-height: 200px;
+    max-height: 180px;
     overflow-y: auto;
     background-color: #fff;
     display: block;
@@ -87,8 +85,48 @@ div .first_column p{
     cursor: pointer;
 }
   
-  .dropdown li:hover {
+.dropdown li:hover {
     background-color: #f0f0f0;
 }
   
+div .day{
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+  
+div .day label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+  
+div .day .dropdown {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+}
 
+div .week{
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+  
+div .week label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+  
+div .week .dropdown {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+}
