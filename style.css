@@ -267,6 +267,7 @@ div .first_column .deffinition div{
 
 div .first_column .navigation_buttons{
     display: flex;
+    margin-top: 20px;
 }
 
 div .first_column .navigation_buttons .button2, .button3 {
