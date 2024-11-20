@@ -8,16 +8,17 @@ body {
 
 .body {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .first_column, .second_column {
-    width: 55%; 
+    width: 45%; 
+    margin-left: 30px;
 }
 
 div .first_column{
-    width: 40%;
-    padding-left: 20px;
+    width: 30%;
+    margin-left: 15px !important;
 }
 
 div .first_column h4{
@@ -321,12 +322,52 @@ div .first_column .service p{
 
 }
 
-.second_column .orar {
+
+.second_column .orar{
     display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-    gap: 0; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 120px); 
+    gap: 0px 0px;
+    font-size: 13px;
 }
 
+.second_column .orar p{
+    color: rgb(100, 100, 100);
+}
 
+.second_column .orar .object_name, .aud {
+    font-weight: 600;
+}
+
+.second_column .orar .hour1, .hour2, .hour3, .hour4, .hour5, .hour6, .hour7{
+    background-color: #25975A;
+    border: 1px solid white;
+    width: 150px;
+    align-content: center;
+    text-align: center;
+}
+
+.hour1 {grid-area: 1/ 1;}
+.hour2 {grid-area: 2/ 1;}
+.hour3 {grid-area: 3/ 1;}
+.hour4 {grid-area: 4/ 1;}
+.hour5 {grid-area: 5/ 1;}
+.hour6 {grid-area: 6/ 1;}
+.hour7 {grid-area: 7/ 1;}
+
+.second_column .orar .les1, .les2, .les3, .les4, .les5, .les6, .les7{
+    background-color: white;
+    border: 1px solid black;
+    align-content: center;
+    text-align: center;
+    width: 600px;
+}
+
+.les1 {grid-area: 1/ 2;} 
+.les2 {grid-area: 2/ 2;}
+.les3 {grid-area: 3/ 2;}
+.les4 {grid-area: 4/ 2;}
+.les5 {grid-area: 5/ 2;}
+.les6 {grid-area: 6/ 2;}
+.les7 {grid-area: 7/ 2;}
 
