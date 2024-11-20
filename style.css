@@ -272,5 +272,17 @@ div .week .dropdown {
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     gap: 0; 
-    
-  }
+}
+
+div .first_column .deffinition{
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+div .first_column .deffinition div{
+    color: white;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
