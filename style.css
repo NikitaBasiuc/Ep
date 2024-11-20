@@ -8,13 +8,12 @@ body {
 
 .body {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .first_column, .second_column {
-    width: 48%; 
+    width: 55%; 
 }
-
 
 div .first_column{
     width: 40%;
@@ -29,6 +28,53 @@ div .first_column h4{
     font-size: 20px;
     font-weight: 900;
 
+}
+
+.mode {
+    color: white;
+    width: 100%;
+    height: 30px;
+    margin: 20px 0;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-end;
+}
+.mode label {
+    height: 100%;
+    width: 70px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.15s ease;
+    margin-left: 10px;
+}
+.mode label input {
+    display: none;
+    height: 100%;
+}
+.mode label .slider {
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    padding: 2px;
+    background: #cccccc;
+    transition: all 0.15s ease;
+
+}
+.mode label .slider::before {
+    content: '';
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    position: absolute;
+    left: 2px;
+    transition: all 0.15s ease;
+
+}
+.mode label input:checked + .slider::before {
+    left: 45%;
+}
+.mode label input:checked + .slider {
+    background-color: #25975A;
 }
 
 div .first_column .buttons{
@@ -142,12 +188,77 @@ div .week .dropdown {
     cursor: pointer;
 }
 
+.container_result-orar {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr; 
+    grid-template-rows: 1fr; 
+    grid-template-areas: 
+    "days days"
+    "days_letter grid_orar";   
+    background: white;
+    margin-top: 20px;
+}
+.days {
+    grid-area: days;
+    width: 100%;
+    background: #25975A;
+    display: grid;
+    border: .5px solid rgb(255, 255, 255) ;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.days_item {
+    color: white;
+    border: .5px solid rgb(255, 255, 255) ;
+    border-left: none;
+    text-align: center;
+}
+.days_letter {
+    grid-area: days_letter;
+    display: grid;
+    background: #25975A;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.days_letter-item {
+    color: white;
+    border: .5px solid rgb(255, 255, 255) ;
+    padding: 1px 0;
+    text-align: center;
+}
+.grid_orar {
+    grid-area: grid_orar;
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+}
+.grid_orar .row_orar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.row_orar-item {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(167, 167, 167) ;
+    border-left: 0;
+    border-top: 0;
+    text-align: center;
+    cursor: pointer;
+}
+.row_orar-item.seminar {
+    background: rgb(255, 83, 83);
+}
+.row_orar-item.laborator {
+    background: rgb(124, 255, 63);
+}
+.row_orar-item.prelegeri {
+    background: rgb(189, 190, 255);
+}
+
 .second_column .container .header {
     text-align: center;
 }
 
 .second_column .container .header h3 {
     color: white;
+    font-weight: 900;
 }
 
 .second_column .container img {
@@ -156,3 +267,10 @@ div .week .dropdown {
 
 }
 
+.second_column .orar {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 0; 
+    
+  }
