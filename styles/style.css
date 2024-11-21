@@ -329,6 +329,7 @@ div .first_column .service p{
     grid-template-rows: repeat(7, 120px); 
     gap: 0px 0px;
     font-size: 13px;
+    color: white;
 }
 
 .second_column .orar p{
